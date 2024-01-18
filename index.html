@@ -18,17 +18,61 @@
         /* You can add more background properties as needed */
       }
     </style>
+       <style>
+        body {
+            background-color: #f8f4e5;
+            font-family: 'Papyrus', cursive;
+            text-align: center;
+            padding: 20px;
+        }
+  
+        h1,h2,h3,h4 {
+            color: #4c3526;
+            text-shadow: 2px 2px 4px #000000;
+            animation: fireAnimation 1.5s infinite alternate;
+            display: inline-block;
+        }
+  
+        @keyframes fireAnimation {
+            from {
+                color: #783d02b1;
+                transform: scale(1);
+            }
+            to {
+                color: #783d02b1;
+                transform: scale(1.1);
+            }
+        }
+  
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+        }
+  
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
   </head>
   <body class="is-preload" >
     <!-- Wrapper -->
     <div id="wrapper">
       <!-- Header -->
       <header id="header">
-        <div class="logo"> <span class="icon fa-gem"></span> </div>
+        <div class="logo"> <img class="icon" src="../startup/ruspina logo.png" alt="feather">
+        </div>
         <div class="content">
           <div class="inner">
             <h1>STARTUP24</h1>
-            <p>A NATIONAL CONFERENCE HOSTED BY LC RUSPINA BLA BLA BLA <br>
+            <p>NATIONAL CONFERENCE HOSTED BY LC RUSPINA <br>
             </p>
           </div>
         </div>
@@ -43,74 +87,278 @@
         </nav>
       </header>
       <!-- Main -->
+      <style>
+        .container {
+          position: relative;
+          width: 600px;
+          padding-left: 50px;
+          
+        }
+        
+        #intro .container img {
+          /* display: block; */
+          width: 600px;
+          height:350px;
+          margin-left:20px,
+          
+          
+        }
+        
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 5;
+          right: 5;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: .5s ease;
+          background-color: rgba(27, 31, 34, 0.85);
+          border-radius: 8px;
+          width: 600px
+        }
+        
+        .container:hover .overlay {
+          opacity: 1;
+        }
+        
+        .text {
+          color: white;
+          font-size: 20px;
+          position: absolute;
+          top: 41%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+        </style>
       <div id="main">
         <!-- Intro -->
         <article id="intro">
           <h2 class="major">OC WORD</h2>
-          <span class="image main"><img src="C:\Users\yazid\Desktop\Startup\startup\images\apache.jpg" alt=""></span>
-          <p>This conference is a portal to a universe where we connect, collaborate, and create. So take up your firearms, summon your allies,
-             and let's get this epic game started. Welcome to our gaming conference; where heroes are born, legends grow and the quest for greatness begins
-            <h1> LAZMOU YETBDL</h1>
-            </p>
+          <div class="container">
+            <img src="../startup/images/team.png.jpg" alt="Avatar" class="oc" >
+            <div class="overlay">
+              <p class="text">STARTUP 2k24 is more than a conference; it's a narrative waiting to be written. Together, let's craft chapters that resonate with inspiration and redefine the landscape of possibilities. As you navigate this epic adventure, seize every opportunity to network and learn. Let STARTUP 2k24 be the catalyst that propels you toward new heights of success.
+               </p>
+            </div>
+          </div>
+          <div>
+            <!-- <span><img src="../startup/images/team.png.jpg" alt="" width="400px" height="290px"></span>
+            <p>This conference is a portal to a universe where we connect, collaborate, and create. So take up your firearms, summon your allies,
+              and let's get this epic game started. Welcome to our gaming conference; where heroes are born, legends grow and the quest for greatness begins
+             </p> -->
+            
+          </div>
+          <!-- <h4> Welcome!</h4> -->
         </article>
         <!-- Work -->
-        <article id="work">
-          <h1 class="major">REGISTER</h1>
-          <h2><b> <center>Choose your Clan</center></b></h2>
-          <span class="image main"><img src="C:\Users\yazid\Desktop\Startup\startup\images\avatar 1.png" alt=""></span>
-          <p>
-           
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.</p>
-          <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.</p>
-        </article>
+        <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #work {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+#work img {
+  width: 200px;
+  
+  margin: 10px;
+  height: 200px;
+}
+
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      
+    }
+
+    .image-container img {
+      /* max-width: 100%; */
+      height: 200px;
+      border-radius: 8px; /* Optional: Add rounded corners to images */
+    }
+
+    register-button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      font-size: 16px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+  <title>Your Page Title</title>
+</head>
+
+<body>
+
+    <article id="work">
+        <h2 class="major">REGISTER</h2>
+        <h3><b><center>Choose your Clan and Unleash the power within you</center></b></h3>
+      
+        <!-- Image 1 -->
+        <div class="image-container" style="text-align: center; width: 200px; margin: 20px;">
+          <img src="bardo.png" alt="" style="max-width: 200px; height: 230px; border-radius: 8px; margin-top:40px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out;">
+          <div class="major" id="logo"  style="padding: 6px 16px; background-color:rgba(19, 21, 25, 0.5);; color: #fff; border-radius: 4px; cursor: pointer; margin-top: 10px;">
+            <a href="https://docs.google.com/forms/d/12EyGcgb4V2x2_2-AVh5DHkCFAUDWC7P_GHn4CrqSFVQ/viewform?edit_requested=true&fbclid=IwAR1L9hadUzQo-ymUdLf4QJzWlNT8doVqzdgkEBwfOQpkZsNMzO28hPi3G_c" target="_blank">Register</a>
+          </div>
+        </div>
+      
+        <!-- Image 2 -->
+        <div class="image-container" style="text-align: center; width: 200px; margin: 20px;">
+          <span class="image main"><img src="bizert.png" alt="" style="max-width: 100%; height: 200px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out;"></span>
+          <a href="https://docs.google.com/forms/d/12EyGcgb4V2x2_2-AVh5DHkCFAUDWC7P_GHn4CrqSFVQ/viewform?edit_requested=true&fbclid=IwAR1L9hadUzQo-ymUdLf4QJzWlNT8doVqzdgkEBwfOQpkZsNMzO28hPi3G_c" target="_blank" id="logo"  class="major" style="display: inline-block; padding: 8px 16px; background-color: rgba(19, 21, 25, 0.5);; color: #fff; border-radius: 4px; cursor: pointer;">Register</a>
+        </div>
+      
+        <!-- Image 3 -->
+        <div class="image-container" style="text-align: center; width: 200px; margin: 20px;">
+          <span class="image main"><img src="carthage.png" alt="" style="max-width: 100%; height: 200px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out;"></span>
+          <a href="https://docs.google.com/forms/d/12EyGcgb4V2x2_2-AVh5DHkCFAUDWC7P_GHn4CrqSFVQ/viewform?edit_requested=true&fbclid=IwAR1L9hadUzQo-ymUdLf4QJzWlNT8doVqzdgkEBwfOQpkZsNMzO28hPi3G_c" target="_blank" id="logo"  class="major" style="display: inline-block; padding: 8px 16px; background-color:rgba(19, 21, 25, 0.5);; color: #fff; border-radius: 4px; cursor: pointer;">Register</a>
+        </div>
+      
+        <!-- Repeat the structure for other images with the same modifications -->
+        <!-- Image 4 -->
+        <div class="image-container" style="text-align: center; width: 200px; margin: 20px;">
+          <span class="image main"><img src="hadrumet.png" alt="" style="max-width: 100%; height: 200px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out;"></span>
+          <a href="https://docs.google.com/forms/d/12EyGcgb4V2x2_2-AVh5DHkCFAUDWC7P_GHn4CrqSFVQ/viewform?edit_requested=true&fbclid=IwAR1L9hadUzQo-ymUdLf4QJzWlNT8doVqzdgkEBwfOQpkZsNMzO28hPi3G_c" target="_blank" id="logo"  class="major" style="display: inline-block; padding: 8px 16px; background-color : rgba(19, 21, 25, 0.5);; color: #fff; border-radius: 4px; cursor: pointer;">Register</a>
+        </div>
+      
+        <!-- Image 5 -->
+        <div class="image-container" style="text-align: center; width: 200px; margin: 20px;">
+          <span class="image main"><img src="medina.png" alt="" style="max-width: 100%; height: 200px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out;"></span>
+          <a href="https://docs.google.com/forms/d/12EyGcgb4V2x2_2-AVh5DHkCFAUDWC7P_GHn4CrqSFVQ/viewform?edit_requested=true&fbclid=IwAR1L9hadUzQo-ymUdLf4QJzWlNT8doVqzdgkEBwfOQpkZsNMzO28hPi3G_c" target="_blank" id="logo"  class="major" style="display: inline-block; padding: 8px 16px; background-color: rgba(19, 21, 25, 0.5);; color: #fff; border-radius: 4px; cursor: pointer;">Register</a>
+        </div>
+      
+        <!-- Image 6 -->
+        <div class="image-container" style="text-align: center; width: 200px; margin: 20px;">
+          <span class="image main"><img src="nabeul.png" alt="" style="max-width: 100%; height: 200px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out;"></span>
+           <a href="https://docs.google.com/forms/d/12EyGcgb4V2x2_2-AVh5DHkCFAUDWC7P_GHn4CrqSFVQ/viewform?edit_requested=true&fbclid=IwAR1L9hadUzQo-ymUdLf4QJzWlNT8doVqzdgkEBwfOQpkZsNMzO28hPi3G_c" target="_blank" id="logo"  class="major" style="display: inline-block; padding: 8px 16px; background-color: rgba(19, 21, 25, 0.5);; color: #fff; border-radius: 4px; cursor: pointer;">Register</a> 
+        </div>
+      
+        <!-- Image 7 -->
+        <div class="image-container" style="text-align: center; width: 200px; margin: 20px;">
+          <span class="image main"><img src="ruspina logo.png" alt="" style="max-width: 100%; height: 200px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out;"></span>
+          <a href="https://docs.google.com/forms/d/12EyGcgb4V2x2_2-AVh5DHkCFAUDWC7P_GHn4CrqSFVQ/viewform?edit_requested=true&fbclid=IwAR1L9hadUzQo-ymUdLf4QJzWlNT8doVqzdgkEBwfOQpkZsNMzO28hPi3G_c" target="_blank" id="logo"  class="major" style="display: inline-block; padding: 8px 16px; background-color:rgba(19, 21, 25, 0.5);; color: #fff; border-radius: 4px; cursor: pointer;">Register</a>
+        </div>
+      
+        <!-- Image 8 -->
+        <div class="image-container" style="text-align: center; width: 200px; margin: 20px;">
+          <span class="image main"><img src="sfax.png" alt="" style="max-width: 100%; height: 200px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out;"></span>
+          <a href="https://docs.google.com/forms/d/12EyGcgb4V2x2_2-AVh5DHkCFAUDWC7P_GHn4CrqSFVQ/viewform?edit_requested=true&fbclid=IwAR1L9hadUzQo-ymUdLf4QJzWlNT8doVqzdgkEBwfOQpkZsNMzO28hPi3G_c" target="_blank" id="logo"  class="major" style="display: inline-block; padding: 8px 16px; background-color:rgba(19, 21, 25, 0.5);; color: #fff; border-radius: 4px; cursor: pointer;">Register</a>
+        </div>
+      
+        <!-- Image 9 -->
+        <div class="image-container" style="text-align: center; width: 200px; margin: 20px;">
+          <span class="image main"><img src="tacapes.png" alt="" style="max-width: 100%; height: 200px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);transition: transform 0.3s ease-in-out;"></span>
+    <a href="https://docs.google.com/forms/d/12EyGcgb4V2x2_2-AVh5DHkCFAUDWC7P_GHn4CrqSFVQ/viewform?edit_requested=true&fbclid=IwAR1L9hadUzQo-ymUdLf4QJzWlNT8doVqzdgkEBwfOQpkZsNMzO28hPi3G_c" target="_blank" id="logo"  class="major" style="display: inline-block; padding: 8px 16px; background-color:rgba(19, 21, 25, 0.5);; color: #fff; border-radius: 4px; cursor: pointer;">Register</a>
+  </div>
+
+  <!-- Image 10 -->
+  <div class="image-container" style="text-align: center; width: 200px; margin: 20px;">
+    <span class="image main"><img src="thyna.png" alt="" style="max-width: 100%; height: 200px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out;"></span>
+    <a href="https://docs.google.com/forms/d/12EyGcgb4V2x2_2-AVh5DHkCFAUDWC7P_GHn4CrqSFVQ/viewform?edit_requested=true&fbclid=IwAR1L9hadUzQo-ymUdLf4QJzWlNT8doVqzdgkEBwfOQpkZsNMzO28hPi3G_c" target="_blank" id="logo"  class="major" style="display: inline-block; padding: 8px 16px; background-color:rgba(19, 21, 25, 0.5);; color: #fff; border-radius: 4px; cursor: pointer;">Register</a>
+  </div>
+
+  <!-- Image 11 -->
+  <div class="image-container" style="text-align: center; width: 200px; margin: 20px;">
+    <span class="image main"><img src="university.png" alt="" style="max-width: 100%; height: 200px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out;"></span>
+    <a href="https://docs.google.com/forms/d/12EyGcgb4V2x2_2-AVh5DHkCFAUDWC7P_GHn4CrqSFVQ/viewform?edit_requested=true&fbclid=IwAR1L9hadUzQo-ymUdLf4QJzWlNT8doVqzdgkEBwfOQpkZsNMzO28hPi3G_c" target="_blank" id="logo"  class="major" style="display: inline-block; padding: 8px 16px; background-color:rgba(19, 21, 25, 0.5);; color: #fff; border-radius: 4px; cursor: pointer;">Register</a>
+  </div>
+
+  <!-- Continue the pattern for other images -->
+  <!-- ... -->
+
+</article>
+      
+      
+
+</body>
+<style>
+  /* CSS to style the layout */
+  #contact .images img {
+  
+     flex-direction: column;
+    justify-content:space-evenly;
+    margin-top: 40px; 
+    border-radius: 15px;
+    mar
+    
+    
+  }
+  #contact .images #firas{
+    margin-right: 50px;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+</style>
+
+</html>
+
         <!-- About -->
         <article id="about">
-          <h2 class="major">VENUE</h2>
-          <span class="image main"><img src="C:\Users\yazid\Desktop\Startup\startup\images\avatar 1.png" alt=""></span>
-          <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit.
-            Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac.
-            Aliquam erat volutpat. Praesent urna nisi, fringila lorem et
-            vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus
-            ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in
-            faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum
-            dolor sit amet.</p>
+          <h2 class="major">Venue</h2><br>
+           <h3><b><center>Amir Palace, Monastir</center></b></h3>
+          <!-- <h2><center>Monastir,Tunisia</center></h2>   -->
+          <a href="https://maps.app.goo.gl/NmbrxMvjK5kdrJRj7" target="_blank"><img id="amir" src="../startup/images/amir.png" alt="amir palace"> </a>
+            
+          <!-- <center><div id="vr"> </div></center>  -->
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.4631911343754!2d10.731723709883024!3d35.76399682531103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13020cc0e66aa0ff%3A0xf1b4942694536653!2sAmir%20Palace!5e0!3m2!1sen!2stn!4v1705502839792!5m2!1sen!2stn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+          
+     <!-- <img src="c:\Users\HP\startup yazid\startup yazid\images\amir palace .jpg" alt="Map Image" style="width: 100%; max-width: 600px; height: auto;"> -->
+
+           <!-- Replace 'your_map_image.jpg' with the URL or path to your map image -->
+           <!-- <a href="https://maps.app.goo.gl/D5UuAVcwaqRJcMML6" target="_blank"> -->
+            <!-- <img src="c:\Users\HP\startup yazid\startup yazid\images\amir palace location.png" alt="Map Image" style="width: 100%; max-width: 600px; height: auto;">  -->
+            
+          </a>
         </article>
         <!-- Contact -->
         <article id="contact">
-          <h2 class="major">CONTACT US</h2>
-          <form method="post" action="#">
-            <div class="fields">
-              <div class="field half"> <label for="name">Name</label> <input name="name"
+            <h2 class="major">CONTACT US</h2>
+          
+            <div class="images">
+              <!-- Image 1 with text -->
+              
+                 <img id="firas" src="images/firas full picture.jpg" alt="firas" width="300px" height="300px" >
+              
 
-                  id="name" type="text"> </div>
-              <div class="field half"> <label for="email">Email</label> <input
-
-                  name="email" id="email" type="text"> </div>
-              <div class="field"> <label for="message">Message</label> <textarea
-
-name="message" id="message" rows="4"></textarea> </div>
+              <!-- Image 2 with text -->
+              
+                <img src="../startup/images/yazid full picture.jpg" alt="yezid" width="300px" height="300px border-radius="10px">
+            
             </div>
-            <ul class="actions">
-              <li><input value="Send Message" class="primary" type="submit"></li>
-              <li><input value="Reset" type="reset"></li>
+             <div class="info">
+                <p class="image-text"><b> OCP </b><br> <b> Firas Atigui : +216 28 569 857</b></p>
+                <p class="image-text"><b> OCVP DxP </b><br> <b> Yezid Slim : +216 46 372 300</b></p>
+              </div>
+          
+            <!-- Icons -->
+            <ul class="icons">
+              <li><a href="https://www.instagram.com/startup.2k24/?igsh=aDlsb2ZoMHQwcGMy&fbclid=IwAR3BJWRvSEz6B6-raofSWJN00XzAS6vOrfw8jbrQMJG9iGuF0OPqGbGdEvA" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+              <li><a href="https://www.facebook.com/groups/1739431653192347" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
             </ul>
-          </form>
-          <ul class="icons">
-            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-          </ul>
-        </article>
+          </article>
+          
+         
+          
+          
         <!-- Elements -->
         <article id="elements">
           <h2 class="major">Elements</h2>
@@ -352,10 +600,9 @@ name="demo-message" id="demo-message" placeholder="Enter your message" rows="6">
         </article>
       </div>
       <!-- Footer -->
-      <footer id="footer">
-        <p class="copyright"> hetha space to add external Link <a href="">click
-            me</a>.</p>
-      </footer>
+      <!-- <footer id="footer">
+        <p class="copyright">external link <a href=""><h4>click me </h4></a>.</p>
+      </footer> -->
     </div>
     <!-- BG -->
     <div id="bg"></div>
